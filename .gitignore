@@ -35,3 +35,4 @@ ckpts*
 # DevContainer
 !.devcontainer/*
 
+habitat-sim/

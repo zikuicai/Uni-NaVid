@@ -481,6 +481,7 @@ class UniNaVIDMetaForCausalLM(ABC):
                             cur_new_input_embeds.append(
                                 self.get_model().embed_tokens(cur_input_ids[:image_token_start]))
                             cur_new_input_embeds.append(cur_image_features)
+                            print(cur_image_features.shape)
                             assert cur_image_features.shape[0] == 64
                             
                         elif nav_or_not[cur_image_idx] is None and video_or_not[cur_image_idx] is True:
